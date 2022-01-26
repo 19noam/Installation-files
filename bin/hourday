@@ -1,0 +1,16 @@
+#!/bin/bash
+
+printf -v weekday '%(%u)T' -1
+
+message='Some default message'
+
+case $weekday in
+    7) message='7 hours' ;; #first
+    1) message='5 hours' ;; #second
+    2) message='6 hours' ;; #third
+    3) message='4 hours' ;; #fourth
+    4) message='5 hours' ;; #fifth
+    6) message='6 hours' ;; #sixth
+esac
+
+printf 'Today you have %s\n' "$message"
