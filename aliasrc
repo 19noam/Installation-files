@@ -1,0 +1,84 @@
+# View the calender by typing the first three letters of the month.
+
+alias jan='cal -m 01'
+alias feb='cal -m 02'
+alias mar='cal -m 03'
+alias apr='cal -m 04'
+alias may='cal -m 05'
+alias jun='cal -m 06'
+alias jul='cal -m 07'
+alias aug='cal -m 08'
+alias sep='cal -m 09'
+alias oct='cal -m 10'
+alias nov='cal -m 11'
+alias dec='cal -m 12'
+
+
+#Whats my public ip
+alias wmip="echo your public ip is && curl ifconfig.me && echo"
+
+#Whats my public ip with lolcat
+alias wmip-c="echo your public ip is && curl ifconfig.me | lolcat && echo"
+
+#cowsay my public ip
+alias cowip="curl ifconfig.me | cowsay"
+
+#cowsay my public ip and lolcat
+alias cowip-c="curl ifconfig.me | cowsay | lolcat"
+
+#xcowsay my public ip
+alias xcowip="curl ifconfig.me | xcowsay"
+
+#shortcut commands to youtube-dl
+alias ytd="youtube-dl"
+
+#start tmpmail
+alias tmpmail="bash tmpmail"
+
+#generate tmp mail
+alias tmpmail-g="bash tmpmail --generate"
+
+#cowsay and fortune
+alias cowfor="fortune | cowsay"
+
+#cowsay and fortune and lolcat
+alias cowfor-c="fortune | cowsay | lolcat"
+
+#update and upgrade
+alias superupdate="sudo apt update && sudo apt upgrade"
+
+#sudo apt update and sudo apt upgrade with lolcat
+
+alias superupdate-c="sudo apt update | lolcat && sudo apt upgrade | lolcat"
+
+#git clone
+alias clone="git clone"
+
+# the terminal rickroll
+alias rr="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
+
+#update all pip packages
+alias ppu="pip3 list --outdated --format=freeze | grep -v '^-e' | cut -d = -f 1 | xargs -n1 pip3 install -U" 
+
+#Start libreoffice
+alias lo="libreoffice"
+
+#Conver libre office file to DOC
+
+alias lo-doc="libreoffice --headless --convert-to doc"
+
+#Replace "" with "all"
+
+alias all=""
+
+#replace sudo with doas
+alias sudo="doas"
+
+#replace killall with ka
+alias ka="killall"
+alias ka-d="killall Discord"
+alias ka-s="steam"
+
+#replace sl with sl -e
+
+alias sl="sl -e"
